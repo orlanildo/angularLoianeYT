@@ -1,0 +1,45 @@
+<form [formGroup]="form" class="needs-validation mt-3" novalidate>
+	<div class="form-row">
+		<div class="col-md-4 mb-12">
+			<label for="name">Nome do Curso</label>
+			<input 
+				id="name"
+				type="text"
+				class="form-control"
+				placeholder="Nome do Curso"
+				[ngClass]="{'is-invalid': flagSubmittedForm && hasError('name')}"
+				formControlName="name"
+				>
+			<div 
+				class="invalid-feedback"
+				*ngIf="hasError('name') && hasError('name')['required']"
+				>Nome do curso é obrigatorio.
+			</div>
+			<div 
+				class="invalid-feedback"
+				*ngIf="hasError('name') && hasError('name')['minlength']"
+				>Nome do curso precisa ter no mínimo 3 caracteres.
+			</div>
+			<div 
+				class="invalid-feedback"
+				*ngIf="hasError('name') && hasError('name')['maxlength']"
+				>Nome do curso precisa ter no máximo 30 caracteres.
+			</div>
+		</div>
+	</div>
+
+	<div class="mt-2">
+		<button 
+			type="submit"
+			class="btn btn-primary"
+			(click)="onSubmit()"
+			>Salvar
+		</button>
+		<button 
+			type="submit"
+			class="btn btn-default"
+			(click)="onCancel()"
+			>Cancelar
+		</button>
+	</div>
+</form>

@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular"
+    },
+    {
+      "name": "Java",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "React-Native"
+    },
+    {
+      "id": 4,
+      "name": "Angular Material"
+    },
+    {
+      "id": 5,
+      "name": "Test"
+    },
+    {
+      "id": 6,
+      "name": "Test 01"
+    }
+  ]
+}
