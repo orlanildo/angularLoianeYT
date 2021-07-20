@@ -7,6 +7,7 @@ import { Location } from '@angular/common'
 import { ActivatedRoute } from '@angular/router';
 import { Icourse } from 'src/app/models/iCurso';
 
+// comment apenas para realizar  um test de merge
 @Component({
   selector: 'app-form-course',
   templateUrl: './form-course.component.html',
